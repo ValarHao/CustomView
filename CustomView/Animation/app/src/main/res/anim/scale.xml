@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="0.0"
+    android:toXScale="1.4"
+    android:fromYScale="0.0"
+    android:toYScale="1.4"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="700">
+</scale>
+
+<!--
+    scale标签 调节尺寸
+    android:fromXScale 起始的X方向上相对自身的缩放比例，浮点值
+    android:toXScale   结尾的X方向上相对自身的缩放比例，浮点值
+    android:fromYScale 起始的Y方向上相对自身的缩放比例，浮点值
+    android:toYScale   结尾的Y方向上相对自身的缩放比例，浮点值
+    android:pivotX/Y   缩放起点X/Y轴坐标，可以是数值、百分数、百分数p，比如 50、50%、50%p
+                       如果是50，表示在当前View的左上角，即原点处加上50px，做为起始缩放点
+                       如果是50%，表示在当前控件的左上角加上自己宽度的50%做为起始点
+                       如果是50%p，那么就是表示在当前的左上角加上父控件宽度的50%做为起始点x轴坐标
+
+    以下是从Animation类继承的属性
+    android:duration   动画持续时间，以毫秒为单位
+    android:fillAfter  如果设置为true，控件动画结束时，将保持动画最后时的状态
+    android:fillBefore 如果设置为true，控件动画结束时，还原到开始动画前的状态
+    android:fillEnabled 与android:fillBefore 效果相同，都是在动画结束时，将控件还原到初始化状态
+    android:repeatCount 重复次数
+    android:repeatMode	重复类型，有reverse和restart两个值，reverse表示倒序回放，restart表示重新放一遍，必须与repeatCount一起使用才能看到效果
+    android:interpolator 设定插值器，其实就是指定的动作效果，比如弹跳效果等
+-->
