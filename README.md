@@ -1,4 +1,4 @@
-# CustomView
+﻿# CustomView
 自定义控件：绘图、动画
 
 # Paint
@@ -17,3 +17,6 @@ Region区域的直接构造、间接构造、交集、补集、替换、反转�
 
 # ObjectAnimator
 派生自ValueAnimator，较其更常用，无需监听
+
+# AnimatorSet
+使用AnimatorSet依次播放、一起播放、自由设置播放顺序及监听动画

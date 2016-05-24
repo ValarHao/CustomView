@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private void doAlpha() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "alpha", 1, 0, 1);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "alpha", 1, 0, 1);
         animator.setDuration(2000);
         animator.start();
     }
 
     private void doRotation() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "rotation", 0, 180, 0);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "rotation", 0, 180, 0);
         animator.setDuration(2000);
         animator.start();
     }
@@ -70,37 +70,37 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private void doRotationX() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "rotationX", 0, 270, 0);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "rotationX", 0, 270, 0);
         animator.setDuration(2000);
         animator.start();
     }
 
     private void doRotationY() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "rotationY", 0, 180, 0);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "rotationY", 0, 180, 0);
         animator.setDuration(2000);
         animator.start();
     }
 
     private void doTranslationX() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "translationX", 0, 100, -100, 0);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "translationX", 0, 100, -100, 0);
         animator.setDuration(2000);
         animator.start();
     }
 
     private void doTranslationY() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "translationY", 0, 100, -100, 0);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "translationY", 0, 100, -100, 0);
         animator.setDuration(2000);
         animator.start();
     }
 
     private void doScaleX() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "scaleX", 0, 3, 1);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "scaleX", 0, 3, 1);
         animator.setDuration(2000);
         animator.start();
     }
 
     private void doScaleY() {
-        ObjectAnimator animator = ObjectAnimator.ofInt(mTextView, "scaleY", 0, 3, 1);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(mTextView, "scaleY", 0, 3, 1);
         animator.setDuration(2000);
         animator.start();
     }
