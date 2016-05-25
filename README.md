@@ -20,3 +20,6 @@ Region区域的直接构造、间接构造、交集、补集、替换、反转�
 
 # AnimatorSet
 使用AnimatorSet依次播放、一起播放、自由设置播放顺序及监听动画
+
+# Xml
+使用xml的方式描绘ValueAnimator、ObjectAnimator、AnimatorSet

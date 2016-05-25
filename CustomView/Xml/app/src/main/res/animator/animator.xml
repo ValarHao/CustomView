@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:valueFrom="0"
+    android:valueTo="300"
+    android:duration="1000"
+    android:valueType="intType"
+    android:interpolator="@android:anim/bounce_interpolator">
+</animator>
+
+<!--
+    <animator
+        android:duration="int" => 每次动画播放的时长
+        android:valueFrom="float | int | color" => 动画初始值
+        android:valueTo="float | int | color" => 动画结束值
+        android:startOffset="int" => 动画激活延时，对应代码中的startDelay(long delay)函数
+        android:repeatCount="int" => 动画重复次数
+        android:repeatMode=["repeat" | "reverse"] => 动画重复模式，repeat表示正序重播，reverse表示倒序重播
+        android:valueType=["intType" | "floatType"] => 参数值类型，与android:valueFrom、android:valueTo相对应
+        android:interpolator=["@android:interpolator/XXX"]/> => 设置加速器
+-->
