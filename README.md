@@ -23,3 +23,6 @@ Region区域的直接构造、间接构造、交集、补集、替换、反转�
 
 # Xml
 使用xml的方式描绘ValueAnimator、ObjectAnimator、AnimatorSet
+
+# LayoutAnimation
+使用LayoutAnimation给整个Group设置动画，LayoutAnimation的特性：仅在创建时有效
