@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.administrator.topbar.TopBar
+        android:id="@+id/id_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:leftText="返回"
+        custom:leftTextSize="5sp"
+        custom:leftTextBackground="@drawable/top_bar_back_bg"
+        custom:titleText="标题"
+        custom:titleTextSize="5sp"
+        custom:rightText="编辑"
+        custom:rightTextSize="5sp"
+        custom:rightTextBackground="@drawable/top_bar_edit_bg"
+        custom:textColor="#FFFFFF"
+        custom:mainBackground="@drawable/top_bar_bg" />
+
+</LinearLayout>
