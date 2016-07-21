@@ -20,4 +20,11 @@
         custom:textColor="#FFFFFF"
         custom:mainBackground="@drawable/top_bar_bg" />
 
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello World!"
+        android:gravity="center"/>
+
 </LinearLayout>
