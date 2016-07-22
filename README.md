@@ -18,3 +18,5 @@ Xml => 使用xml的方式描绘ValueAnimator、ObjectAnimator、AnimatorSet
 RandomTextView => 产生随机数的TextView
 
 TopBar => 顶部自定义工具栏
+
+DragView => 常用的实现滑动的四种方法
