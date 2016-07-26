@@ -5,24 +5,29 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 /**
  * 常用的实现滑动的四种方法
  */
 public class DragView extends View {
 
-    Context mContext;
-
     int lastX = 0;
     int lastY = 0;
 
+    public DragView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+    }
+
+    public DragView(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
     public DragView(Context context) {
-        super(context);
-        mContext = context;
+        this(context, null);
     }
 
     @Override
@@ -33,7 +38,7 @@ public class DragView extends View {
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.FILL_AND_STROKE); //填充样式 -> 描边且填充
         paint.setStrokeWidth(2); //画笔宽度
-        Rect rect = new Rect(0, 0, 100, 100);
+        Rect rect = new Rect(0, 0, getRight(), getBottom());
         canvas.drawRect(rect, paint);
     }
 
@@ -122,7 +127,7 @@ public class DragView extends View {
     /**
      * 三、LayoutParams
      */
-    /**@Override
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         int x = (int) event.getX();
         int y = (int) event.getY();
@@ -145,7 +150,7 @@ public class DragView extends View {
                 break;
         }
         return true;
-    }*/
+    }
 
     /**
      * 四、scrollTo与scrollBy

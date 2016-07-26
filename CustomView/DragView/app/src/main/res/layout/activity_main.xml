@@ -5,4 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <com.example.administrator.dragview.DragView
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
 </LinearLayout>
