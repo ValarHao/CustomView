@@ -20,3 +20,5 @@ RandomTextView => 产生随机数的TextView
 TopBar => 顶部自定义工具栏
 
 DragView => 常用的实现滑动的四种方法
+
+CircleImage => 自定义圆形ImageView
